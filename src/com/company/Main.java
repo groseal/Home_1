@@ -10,7 +10,7 @@ public class Main {
 	//Переменные и их инициализация
     System.out.println("\nЗадание 2:\n");
     byte q1 = 1;
-    short q2 = 2;
+    short q2 = 3;
     int q3 = q1 + q2;
     float q4 = q3 * q3;
     double q5 = q4/5;
