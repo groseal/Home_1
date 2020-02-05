@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Main {
 
+
     public static void main(String[] args) {
     Scanner in = new Scanner(System.in);
 	//Переменные и их инициализация
@@ -15,7 +16,7 @@ public class Main {
     double q5 = q4/5;
     char q6 = '\\';
     boolean q7 = true;
-    String q8 = "I love you JAVA";
+    String q8 = "Я люблю JAVA";
     System.out.println(q1+"\n"+q2+"\n"+q3+"\n"+q4+"\n"+q5+"\n"+q6+"\n"+q7+"\n"+q8);
 
     //Написать метод вычисляющий выражение a * (b + (c / d))
