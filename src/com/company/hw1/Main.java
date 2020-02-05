@@ -1,4 +1,6 @@
-package com.company;
+package com.company.hw1;
+
+import com.company.hw1.*;
 
 import java.util.Scanner;
 
