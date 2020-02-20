@@ -81,6 +81,7 @@ char a = str.charAt(0); - метод, вернет char, который стои
             int lengthInputWord = inputWord.length();
             if (inputWord.length() > targetWord.length()) {
                 continue;}
+
             else {
                 for (int i = 0; i < lengthInputWord; i++) {
                     char a = targetWord.charAt(i);
