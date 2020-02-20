@@ -1,4 +1,4 @@
-package com.company;
+package com.company.hw1;
 
 public class Hello {
     public void hello (String name){
