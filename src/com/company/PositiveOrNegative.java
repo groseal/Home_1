@@ -1,4 +1,4 @@
-package com.company.hw1;
+package com.company;
 
 public class PositiveOrNegative {
     public void number (int j) {
