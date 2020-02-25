@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Main {
     public static int SIZE_X = 7;//размер поля
-    public static int SIZE_Y = 7;//размер поля
+    public static int SIZE_Y = 6;//размер поля
     public static int DOTS_TO_WIN = 3; //количество фишек для победы
     public static final char DOT_EMPTY = '•';
     public static final char DOT_X = 'X';
@@ -81,28 +81,35 @@ public class Main {
             }
         }
         //Проверка диагоналей
+        int countMajor = 0;
         count = 0;
-        for (int i = 0; i < map.length; i++) {
-            for (int j = 0; j < map.length; j++) {
-                if (map[i][i] == symb && map[i + 1][i + 1] == symb) {
-                    count++;
-                    if (count == DOTS_TO_WIN) {
-                        return true;
-                    }
-                } else count = 0;
-            }
-        }
-//        for (int i = 0; i < map.length; i++) {
-//            for (int j = 0; j < map.length; j++) {
-//                int k = map.length - 1;
-//                if (map[k-i][i] == symb) {
-//                    count++;
-//                    if (count == DOTS_TO_WIN) {
-//                        return true;
-//                    }
-//                } else count = 0;
+//        for (int i = 0; i < SIZE_Y; i++) {
+//            for (int j = 0; j < SIZE_X; j++) {
+//                if (j == i && map[i][j] == symb) {
+//                    countMajor++;
+//                }
+//                if (countMajor == DOTS_TO_WIN) {
+//                    return true;
+//                }
 //            }
 //        }
+
+        for (int i = 0; i < SIZE_Y - 1; i++) {
+            for (int j = 0; j < SIZE_X - 1; j++) {
+
+                if (map[i][j] == symb) {
+                    count++;
+                    while (count <= DOTS_TO_WIN) {
+                        if (map[i + 1][j + 1] == symb) {
+                            count++;
+                        } else count = 0;
+                    }
+                }
+                if (count == DOTS_TO_WIN) {
+                    return true;
+                }
+            }
+        }
         return false;
     }
 
