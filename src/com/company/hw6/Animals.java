@@ -1,4 +1,4 @@
-package hw6;
+package com.company.hw6;
 
 public class Animals {
     private int run;
