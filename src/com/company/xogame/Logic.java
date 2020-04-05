@@ -27,16 +27,16 @@ public class Logic {
         printMap();
 
         if (checkWinLines(DOT_X)) {
-            System.out.println("Игрок победил!!!");
-            winnerName ="Игрок победил!!!";
-            JOptionPane.showMessageDialog(null,"Человек победил!\nКОНЕЦ ИГРЫ","КОНЕЦ ИГРЫ",JOptionPane.PLAIN_MESSAGE);
+            System.out.println("пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ!!!");
+            winnerName ="пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ!!!";
+            JOptionPane.showMessageDialog(null,"пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ!\nпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ","пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ",JOptionPane.PLAIN_MESSAGE);
             return;
         }
 
         if (isFull()) {
-            System.out.println("Ничья!");
-            winnerName ="Ничья!";
-            JOptionPane.showMessageDialog(null,"Игра закончилась ничьей\nКОНЕЦ ИГРЫ","КОНЕЦ ИГРЫ",JOptionPane.PLAIN_MESSAGE);
+            System.out.println("пїЅпїЅпїЅпїЅпїЅ!");
+            winnerName ="пїЅпїЅпїЅпїЅпїЅ!";
+            JOptionPane.showMessageDialog(null,"пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ\nпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ","пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ",JOptionPane.PLAIN_MESSAGE);
             return;
         }
 
@@ -44,17 +44,17 @@ public class Logic {
         printMap();
 
         if (checkWinLines(DOT_O)) {
-            System.out.println("Победил ИИ!!!");
-            winnerName ="Победил ИИ!!!";
-            JOptionPane.showMessageDialog(null,"Победил искусственный интеллект!\nКОНЕЦ ИГРЫ","КОНЕЦ ИГРЫ",JOptionPane.PLAIN_MESSAGE);
+            System.out.println("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ!!!");
+            winnerName ="пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ!!!";
+            JOptionPane.showMessageDialog(null,"пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ!\nпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ","пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ",JOptionPane.PLAIN_MESSAGE);
 
             return;
         }
 
         if (isFull()) {
-            System.out.println("Ничья!");
-            winnerName ="Ничья!";
-            JOptionPane.showMessageDialog(null,"Игра закончилась ничьей\nКОНЕЦ ИГРЫ","КОНЕЦ ИГРЫ",JOptionPane.PLAIN_MESSAGE);
+            System.out.println("пїЅпїЅпїЅпїЅпїЅ!");
+            winnerName ="пїЅпїЅпїЅпїЅпїЅ!";
+            JOptionPane.showMessageDialog(null,"пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ\nпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ","пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ",JOptionPane.PLAIN_MESSAGE);
 
             return;
         }
