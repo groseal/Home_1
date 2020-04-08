@@ -35,10 +35,6 @@ public class MainCircles extends JFrame {
         setTitle("Circles");
         initApplication();
 
-//        canvas.setBackground ();
-//                (int)(Math.random() * 255),
-//                (int)(Math.random() * 255),
-//                (int)(Math.random() * 255)));
 
         canvas.addMouseListener(new MouseAdapter() {
             @Override
