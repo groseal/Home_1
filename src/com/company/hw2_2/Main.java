@@ -32,8 +32,7 @@ public class Main {
                 for (int j = 0; j < stringToArr.length; j++) {
                 }
             }
-        } catch (NumberFormatException e) {
-            System.out.println("\nНеверный тип данных в массиве!");
+        } catch (MyExceptionSizeMas e) {
             e.printStackTrace();
         }
 
@@ -60,7 +59,7 @@ public class Main {
 
 
     public static void main(String[] args) throws MyExceptionSizeMas {
-        String line = "10 3 1 2\\n2 3 2 2\\n5 6 7 1\\n300 3 1 h";
+        String line = "10 3 1 2\\n2 3 2 2\\n5 6 7 1\\n300 3 1 0";
         String[][] arr = stringToArr(line);
 
         for (String[] strings : arr) {
