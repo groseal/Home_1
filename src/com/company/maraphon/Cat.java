@@ -1,4 +1,4 @@
-package com.company.marathon;
+package com.company.maraphon;
 
 public class Cat extends Creatures {
     public Cat(String name, int maxRun, int maxJump) {

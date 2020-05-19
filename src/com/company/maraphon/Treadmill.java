@@ -1,4 +1,4 @@
-package com.company.marathon;
+package com.company.maraphon;
 
 public class Treadmill implements Obstacles {
     int number;

@@ -1,4 +1,4 @@
-package com.company.marathon;
+package com.company.maraphon;
 
 public class Robot extends Creatures {
     public Robot(String name, int maxRun, int maxJump) {
