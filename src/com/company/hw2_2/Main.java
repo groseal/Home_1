@@ -9,10 +9,8 @@ package com.company.hw2_2;
 5. * Написать собственные классы исключений для каждого из случаев
 */
 
-import java.util.Arrays;
 
 public class Main {
-    //Задание 1.
     static String[][] stringToArr(String line) throws MyExceptionSizeMas {
         String[] arr = line.split("\\\\n");
         for (int i = 0; i < arr.length; i++) {
@@ -39,7 +37,6 @@ public class Main {
         return stringToArr;
     }
 
-    //Задание 2.
     static int matTransformationsMas(String[][] arr) {
         int sum = 0;
         for (int i = 0; i < arr.length; i++) {
@@ -58,10 +55,14 @@ public class Main {
     }
 
 
-    public static void main(String[] args) throws MyExceptionSizeMas {
-        String line = "10 3 1 2\\n2 3 2 2\\n5 6 7 1\\n300 3 1 0" +
-                "";
-        String[][] arr = stringToArr(line);
+    public static void main(String[] args)  {
+        String line = "1 3 1 2\\n2 3 2 2\\n5 6 7 1\\n3 3 1 2" +"";
+        String[][] arr = new String[0][];
+        try {
+            arr = stringToArr(line);
+        } catch (MyExceptionSizeMas e) {
+            e.printStackTrace();
+        }
 
         for (String[] strings : arr) {
             for (String string : strings) {
@@ -72,5 +73,11 @@ public class Main {
 
         int a = matTransformationsMas(arr);
         System.out.println("\nСумма всех элементов двумерного \nмассива деленная на 2 равна: " + a);
+    }
+}
+
+class MyExceptionSizeMas extends Exception {
+    public MyExceptionSizeMas() {
+        super("Массив неправильного размера!");
     }
 }

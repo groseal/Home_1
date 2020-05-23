@@ -1,4 +1,4 @@
-package com.company.marathon;
+package com.company.maraphon;
 
 public class Human extends Creatures {
     public Human(String name, int maxRun, int maxJump) {

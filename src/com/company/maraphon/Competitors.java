@@ -1,4 +1,4 @@
-package com.company.marathon;
+package com.company.maraphon;
 
 public interface Competitors {
     void run (int dist);
