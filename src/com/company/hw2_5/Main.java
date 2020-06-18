@@ -58,11 +58,15 @@
 //        time.set(System.currentTimeMillis());
 //        newThreadArr1.start();
 //        newThreadArr2.start();
-//
 //        try {
 //            newThreadArr1.join();
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//    }
+//}
 //
-//public class Main {
+//public class Formula {
 //    static final int size = 10000000;
 //    static final int h = size / 2;
 //
@@ -73,8 +77,8 @@
 //        System.arraycopy(arr, 0, arr1, 0, size);
 //        parallel(arr);
 //        System.out.println(Arrays.equals(arr1, arr));
-//        System.out.println(arr1[1]+" "+arr1[h-1]+" "+arr1[h]+" "+arr1[h+1]);
-//        System.out.println(arr[1]+" "+arr[h-1]+" "+arr[h]+" "+arr[h+1]);
+//        System.out.println(arr1[1] + " " + arr1[h - 1] + " " + arr1[h] + " " + arr1[h + 1]);
+//        System.out.println(arr[1] + " " + arr[h - 1] + " " + arr[h] + " " + arr[h + 1]);
 //
 //    }
 //
@@ -99,7 +103,7 @@
 //        System.arraycopy(arr, h, arr2, 0, h);
 //
 //        Thread newThreadArr1 = new Thread(() -> {
-//            for (int i =0; i < arr1.length; i++) {
+//            for (int i = 0; i < arr1.length; i++) {
 //                arr1[i] = (float) (arr1[i] * Math.sin(0.2f + i / 5) * Math.cos(0.2f + i / 5) * Math.cos(0.4f + i / 2));
 //            }
 //        });
